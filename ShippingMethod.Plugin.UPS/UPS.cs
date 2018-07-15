@@ -76,7 +76,6 @@ namespace ShippingMethod.Plugin.UPS
             sb.Append("		</Request>");
             sb.Append("		<PickupType>");
             sb.Append("			<Code>").Append(pickUpType).Append("</Code>");
-            //sb.Append("			<Code>").Append("03").Append("</Code>");
             sb.Append("		</PickupType>");
             sb.Append("		<Shipment>");
             sb.Append("			<Shipper>");
@@ -93,7 +92,6 @@ namespace ShippingMethod.Plugin.UPS
             sb.Append("			</ShipTo>");
             sb.Append("			<Service>");
             sb.Append("				<Code>").Append(serviceCode).Append("</Code>");
-            //sb.Append("				<Code>").Append(((int)shipment.Services).ToString()).Append("</Code>");
             sb.Append("			</Service>");
 
             for (var i = 0; i < packages.Count; i++)
